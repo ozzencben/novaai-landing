@@ -41,7 +41,7 @@ Bu proje React, Framer Motion ve Lucide Icons kullanılarak modern bir UI/UX ile
 
 ## 🌐 Canlı Demo
 
-## [Netlify Linki](https://novaai.netlify.app)
+## [Netlify Linki](https://novaailanding.netlify.app/)
 
 ## 💻 Kullanılan Teknolojiler
 
