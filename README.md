@@ -27,15 +27,15 @@ Bu proje React, Framer Motion ve Lucide Icons kullanılarak modern bir UI/UX ile
 
 ### Hero Section
 
-![Hero](./assets/hero.png)
+![Hero](./novaai-landing/public/assets/hero.png)
 
 ### Features Section
 
-![Features](./assets/how-it-work.png)
+![Features](./novaai-landing/public/assets/how-it-work.png)
 
 ### Tablet Mockup & Floating Shapes
 
-![Mockup](./assets/mobile.png)
+![Mockup](./novaai-landing/public/assets/mobile.png)
 
 ---
 
