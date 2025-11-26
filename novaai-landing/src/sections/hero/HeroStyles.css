@@ -1,0 +1,123 @@
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  gap: 10px;
+  padding: 10px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d111c;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.hero-content {
+  width: 90%;
+  max-width: 600px; /* İçeriği merkezde tutmak için eklendi */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  font-weight: 800; /* Daha kalın font */
+  text-align: center;
+  line-height: 1.2;
+
+  background-image: linear-gradient(45deg, #7c3aed, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Fallback */
+}
+
+.hero-subtitle {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.4;
+  color: #a0a8b5;
+}
+
+.hero-button {
+  padding: 12px 24px; /* Biraz daha büyük buton */
+  border-radius: 8px; /* Daha yuvarlak kenarlar */
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+
+  background-image: linear-gradient(45deg, #7c3aed, #ec4899);
+  color: #fff;
+  /* Daha güçlü, neon parıltılı gölge */
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.7), 0 0 40px rgba(236, 72, 153, 0.3);
+  transition: all 0.3s ease;
+}
+
+.mockup-container {
+  width: clamp(300px, 50%, 600px);
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 5;
+}
+
+.tablet-mockup {
+  width: 100%;
+  position: relative;
+  z-index: 6;
+}
+
+.mobile-mockup {
+  position: absolute;
+  width: 50%; /* Tabletin yaklaşık %38'i */
+  top: 35%;
+  right: -5%; /* Tabletin sağından dışarı taşıyor */
+  z-index: 7; /* Tabletin önünde yer alması için */
+
+  /* Giriş animasyonundan önce görünen varsayılan rotasyon */
+  transform: rotate(5deg);
+
+  /* Mobil için ekstra bir gölge, derinlik hissini artırır */
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.shapes-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+  z-index: -1;
+  /* background stili Hero.Animations.js'ten geliyor, buradaki sadece fallback/varsayılan */
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(79, 70, 229, 0.4),
+    rgba(147, 197, 253, 0.1)
+  );
+  filter: blur(40px); /* Blur efekti artırıldı */
+  opacity: 0.7;
+}

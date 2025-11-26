@@ -1,0 +1,159 @@
+.footer-container {
+  width: 100%;
+  padding: 80px 20px 20px 20px;
+  /* Koyu Arka Plan */
+  background-color: #0d111c;
+  color: #ffffff;
+  /* Neon temaya uygun üst sınır */
+  border-top: 2px solid rgba(124, 58, 237, 0.4);
+}
+
+.footer-main-content {
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  display: grid;
+  /* Varsayılan: Mobil için tek sütun (1fr) */
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+/* Marka Bölümü: Mobil'de tek sütun olduğu için tam genişlik (varsayılan) */
+.footer-brand-section {
+  grid-column: auto;
+}
+
+/* Tablet ve Büyük Telefonlar için 2 Kolon Düzeni */
+@media (min-width: 480px) {
+  .footer-main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-brand-section {
+    /* 2 sütunlu düzende her zaman 2 sütuna yayılır */
+    grid-column: span 2; 
+  }
+}
+
+/* Masaüstü için 4 Kolon Düzeni */
+@media (min-width: 768px) {
+  .footer-main-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer-brand-section {
+    /* Masaüstünde tek sütuna döner */
+    grid-column: span 1; 
+  }
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.logo-icon {
+  color: #ec4899; /* Neon Pembe İkon */
+  filter: drop-shadow(0 0 5px #ec4899);
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 900;
+  /* Neon Gradient Başlık */
+  background-image: linear-gradient(45deg, #7c3aed, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.footer-slogan {
+  color: #a0a8b5;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer-creator {
+  font-size: 0.9rem;
+  color: #a0a8b5;
+}
+
+.ozzen-name {
+  color: #34d399; /* Nane Yeşili Vurgu */
+  font-weight: 600;
+}
+
+/* Link Grupları */
+.links-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+  /* Hafif Mor Vurgu */
+  text-shadow: 0 0 5px rgba(124, 58, 237, 0.5);
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  color: #a0a8b5;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footer-link:hover {
+  color: #ec4899; /* Neon Pembe Hover */
+}
+
+/* İletişim Bölümü */
+.contact-mail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #a0a8b5;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.contact-mail svg {
+  color: #7c3aed; /* Mor İkon */
+}
+
+.contact-mail:hover {
+  color: #7c3aed; /* Mor Hover */
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  color: #a0a8b5;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #ec4899; /* Neon Pembe Hover */
+}
+
+/* Alt Bar */
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  color: #7f8695;
+}

@@ -1,0 +1,62 @@
+.final-cta-container {
+  padding: 100px 20px;
+  background-color: #0d111c; /* Koyu Arka Plan */
+  /* Dramatik görünüm için hafif mor ayırıcı */
+  border-top: 1px solid rgba(124, 58, 237, 0.3); 
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cta-content {
+  width: 100%;
+  max-width: 800px;
+}
+
+.cta-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  
+  /* En Güçlü Neon Gradient Başlık */
+  background-image: linear-gradient(45deg, #7c3aed, #ec4899); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.cta-subtitle {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #a0a8b5;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  padding: 15px 35px;
+  border-radius: 12px; 
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  /* Neon Gradient Buton */
+  background-image: linear-gradient(45deg, #7c3aed, #ec4899);
+  color: #fff;
+  /* En güçlü neon gölge */
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.8), 0 0 60px rgba(236, 72, 153, 0.4);
+  transition: all 0.3s ease;
+}
+
+.button-icon {
+    margin-left: 5px;
+}

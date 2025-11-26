@@ -1,0 +1,87 @@
+.faq-container {
+  padding: 100px 20px;
+  background-color: #161b2c; /* Bir sonraki koyu arka plan (Hafifçe farklı ton) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.faq-heading {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 50px;
+  /* Neon Gradient Başlık */
+  background-image: linear-gradient(45deg, #7c3aed, #ec4899); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.faq-list {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  border-radius: 12px;
+  overflow: hidden;
+  /* Glass/Blur Kart stili */
+  background: rgba(255, 255, 255, 0.05); 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.faq-question-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question-button:hover {
+  background-color: rgba(124, 58, 237, 0.1); /* Hafif mor hover */
+}
+
+.faq-icon-text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.faq-icon {
+    color: #ec4899; /* Neon ikon rengi */
+}
+
+.faq-question {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 600;
+}
+
+.faq-toggle-icon {
+    color: #7c3aed; /* Neon toggle rengi */
+}
+
+.faq-answer-wrapper {
+  padding: 0 20px;
+  /* AnimatePresence/motion.div içindeki içeriğe padding veriliyor */
+}
+
+.faq-answer-text {
+  padding-bottom: 20px;
+  color: #a0a8b5;
+  font-size: 1rem;
+  line-height: 1.6;
+}

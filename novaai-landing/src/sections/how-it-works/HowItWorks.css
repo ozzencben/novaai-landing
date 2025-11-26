@@ -1,0 +1,88 @@
+.how-it-works-container {
+  padding: 100px 20px;
+  background-color: #0d111c; /* Koyu Arka Plan */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hiw-heading {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 10px;
+  /* Neon Gradient Başlık */
+  background-image: linear-gradient(45deg, #7c3aed, #ec4899); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.hiw-subtitle {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: #a0a8b5;
+  margin-bottom: 60px;
+}
+
+.steps-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .steps-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+
+.hiw-step-card {
+  flex: 1;
+  padding: 30px;
+  border-radius: 16px;
+  /* Glass/Blur Efekti */
+  background: rgba(255, 255, 255, 0.05); 
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  /* Neon Gölge */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(124, 58, 237, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.hiw-step-card:hover {
+    transform: translateY(-5px);
+    /* Daha güçlü neon parıltı */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(124, 58, 237, 0.5);
+}
+
+.hiw-icon-wrapper {
+  color: #ec4899; /* Neon İkon Rengi */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(236, 72, 153, 0.1); /* Hafif arka plan parıltısı */
+  box-shadow: 0 0 15px rgba(236, 72, 153, 0.5);
+  margin: 0 auto 20px;
+}
+
+.hiw-step-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.hiw-step-description {
+  color: #a0a8b5;
+  font-size: 1rem;
+}
